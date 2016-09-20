@@ -99,7 +99,7 @@ object Scoverage extends Build {
     "org.scala-lang" % "scala-compiler" % scalaVersion.value % "provided",
     "org.joda" % "joda-convert" % "1.6" % "test",
     "joda-time" % "joda-time" % "2.3" % "test",
-    "com.typesafe.scala-logging" %% "scala-logging-slf4j" % "2.1.2" % "test"
+    "com.typesafe.scala-logging" %% "scala-logging" % "3.5.0" % "test"
   )).settings(libraryDependencies ++= {
     CrossVersion.partialVersion(scalaVersion.value) match {
       case Some((2, scalaMajor)) if scalaMajor == 11 =>
